@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radar de Achadinhos — Ofertas & Cupons Diários</title>
+  <meta name="description" content="Os melhores achadinhos, promoções reais e cupons todos os dias na Shopee, Mercado Livre, Amazon e Shein." />
+  <meta property="og:title" content="Radar de Achadinhos — Ofertas & Cupons" />
+  <meta property="og:description" content="Entre no Grupo VIP gratuito e pegue os melhores achadinhos antes que o estoque acabe." />
+  <meta property="og:image" content="avatar.jpg" />
+  <style>
+    :root {
+      --bg-dark: #071224;
+      --bg-mid: #0f2342;
+      --card: rgba(255, 255, 255, 0.06);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --orange: #ff6b2b;
+      --coral: #ff4d4f;
+      --amber: #ffc43d;
+      --text: #ffffff;
+      --muted: #9eb3cf;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at 80% 0%, #1f4173 0%, var(--bg-mid) 35%, var(--bg-dark) 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 28px 16px 48px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--orange);
+      box-shadow: 0 0 28px rgba(255, 107, 43, 0.45);
+    }
+
+    .hero h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--amber);
+      background: rgba(255, 196, 61, 0.12);
+      border: 1px solid rgba(255, 196, 61, 0.35);
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 8px #22c55e;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.45;
+      max-width: 400px;
+    }
+
+    /* Main CTA Buttons */
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.96rem;
+      text-align: center;
+      line-height: 1.25;
+      background: linear-gradient(135deg, var(--orange), var(--coral));
+      box-shadow: 0 12px 28px rgba(255, 107, 43, 0.38);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px rgba(255, 107, 43, 0.5);
+    }
+
+    .btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.94rem;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.11);
+      border-color: rgba(255, 107, 43, 0.5);
+    }
+
+    /* Section Title */
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 6px;
+    }
+
+    .section-head h2 {
+      font-size: 1.08rem;
+      font-weight: 800;
+    }
+
+    .section-head span {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* Search + Store Filter */
+    .search-box {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      font-size: 0.92rem;
+      outline: none;
+    }
+
+    .search-box::placeholder { color: var(--muted); }
+    .search-box:focus { border-color: var(--orange); }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .filters::-webkit-scrollbar { display: none; }
+
+    .chip {
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      color: var(--muted);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .chip.active, .chip:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: #fff;
+    }
+
+    /* Offers Grid */
+    .offers-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .offer-card {
+      display: flex;
+      gap: 14px;
+      padding: 12px;
+      border-radius: 16px;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      text-decoration: none;
+      color: inherit;
+      align-items: center;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--orange);
+    }
+
+    .offer-thumb {
+      width: 84px;
+      height: 84px;
+      border-radius: 12px;
+      background: #fff;
+      padding: 6px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .offer-body {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .offer-store {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--orange);
+    }
+
+    .offer-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .offer-prices {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 2px;
+      flex-wrap: wrap;
+    }
+
+    .price-old {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+
+    .price-now {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: var(--amber);
+    }
+
+    .coupon-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #fff;
+      background: rgba(255, 107, 43, 0.22);
+      border: 1px dashed var(--orange);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 28px 16px;
+      color: var(--muted);
+      background: var(--card);
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <img src="avatar.jpg" alt="Radar de Achadinhos" class="avatar" />
+      <div class="badge-live"><span class="dot"></span> OFERTAS ATUALIZADAS TODOS OS DIAS</div>
+      <h1>Radar de Achadinhos</h1>
+      <p>Curadoria diária de promoções reais, achadinhos virais e cupons da Shopee, Mercado Livre, Amazon e Shein.</p>
+    </header>
+
+    <section class="cta-group">
+      <a class="btn-primary" href="https://t.me/radardeachadinhosbr007" target="_blank" rel="noopener">
+        ✈️ ENTRAR NO CANAL VIP DO TELEGRAM (GRÁTIS)
+      </a>
+      <!-- Quando criar o Canal do WhatsApp, basta trocar o href abaixo e remover o comentario -->
+      <!-- <a class="btn-secondary" href="https://whatsapp.com/channel/SEU_LINK" target="_blank" rel="noopener">💬 Entrar no Canal do WhatsApp</a> -->
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>🔥 Achadinhos Recentes</h2>
+        <span id="offer-count"></span>
+      </div>
+    </section>
+
+    <input
+      type="search"
+      id="search"
+      class="search-box"
+      placeholder="🔎 Buscar produto (ex: PlayStation, fone, cozinha...)"
+    />
+
+    <div class="filters" id="filters">
+      <button class="chip active" data-store="ALL">Todos</button>
+      <button class="chip" data-store="Mercado Livre">Mercado Livre</button>
+      <button class="chip" data-store="Shopee">Shopee</button>
+      <button class="chip" data-store="Amazon">Amazon</button>
+      <button class="chip" data-store="Shein">Shein</button>
+    </div>
+
+    <section class="offers-list" id="offers-list">
+      <div class="empty-state">Carregando achadinhos...</div>
+    </section>
+
+    <footer>
+      ⚠️ Os preços, cupons e estoques são definidos pelas lojas parceiras e podem mudar a qualquer momento.<br />
+      © Radar de Achadinhos — Links de afiliado sem custo extra para você.
+    </footer>
+  </main>
+
+  <script>
+    let allOffers = [];
+    let activeStore = "ALL";
+
+    function escapeHtml(str) {
+      return String(str || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderOffers() {
+      const list = document.getElementById("offers-list");
+      const countEl = document.getElementById("offer-count");
+      const query = document.getElementById("search").value.trim().toLowerCase();
+
+      const filtered = allOffers.filter((o) => {
+        const matchStore = activeStore === "ALL" || (o.store || "").toLowerCase() === activeStore.toLowerCase();
+        const matchQuery = !query || (o.title || "").toLowerCase().includes(query) || (o.store || "").toLowerCase().includes(query);
+        return matchStore && matchQuery;
+      });
+
+      countEl.textContent = filtered.length ? `${filtered.length} oferta(s)` : "";
+
+      if (!filtered.length) {
+        list.innerHTML = `<div class="empty-state">Nenhum achadinho encontrado aqui ainda.<br/>Entre no <b>Canal VIP do Telegram</b> acima para receber em primeira mão!</div>`;
+        return;
+      }
+
+      list.innerHTML = filtered.map((o) => {
+        const img = o.image_url && o.image_url.startsWith("http") ? escapeHtml(o.image_url) : "avatar.jpg";
+        const oldPrice = o.original_price ? `<span class="price-old">De ${escapeHtml(o.original_price)}</span>` : "";
+        const nowPrice = o.current_price ? `<span class="price-now">${escapeHtml(o.current_price)}</span>` : `<span class="price-now">Ver oferta</span>`;
+        const coupon = o.coupon ? `<span class="coupon-tag">🎟️ ${escapeHtml(o.coupon)}</span>` : "";
+
+        return `
+          <a class="offer-card" href="${escapeHtml(o.affiliate_url)}" target="_blank" rel="noopener">
+            <img class="offer-thumb" src="${img}" alt="${escapeHtml(o.title)}" loading="lazy" onerror="this.onerror=null;this.src='avatar.jpg';" />
+            <div class="offer-body">
+              <span class="offer-store">${escapeHtml(o.store || "Oferta")}</span>
+              <div class="offer-title">${escapeHtml(o.title)}</div>
+              <div class="offer-prices">
+                ${oldPrice}
+                ${nowPrice}
+                ${coupon}
+              </div>
+            </div>
+          </a>
+        `;
+      }).join("");
+    }
+
+    document.getElementById("search").addEventListener("input", renderOffers);
+    document.getElementById("filters").addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      document.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
+      btn.classList.add("active");
+      activeStore = btn.dataset.store;
+      renderOffers();
+    });
+
+    fetch("ofertas.json?v=" + Date.now())
+      .then((r) => r.json())
+      .then((data) => {
+        allOffers = Array.isArray(data) ? data : [];
+        renderOffers();
+      })
+      .catch(() => {
+        allOffers = [];
+        renderOffers();
+      });
+  </script>
+</body>
+</html>
