@@ -1,12 +1,46 @@
 [
   {
-    "id": 1,
+    "id": 7,
+    "store": "Mercado Livre",
+    "title": "Tênis Fila Academia Corrida Caminhada Macio Pronta Entrega Fila Preto Branco 40 Br",
+    "original_price": "R$ 332 , 90",
+    "current_price": "R$ 99,87",
+    "coupon": "",
+    "affiliate_url": "https://meli.la/29dGYr1",
+    "image_url": "https://http2.mlstatic.com/D_NQ_NP_994518-MLB118865581852_102026-O.webp",
+    "published_at": "2026-11-21T14:46:15.454487"
+  },
+  {
+    "id": 6,
     "store": "Mercado Livre",
     "title": "Console PlayStation5 Slim Disk - Pacote ASTRO BOT e Gran Turismo 7",
     "original_price": "R$ 5.099",
     "current_price": "R$ 4.844",
     "coupon": "",
     "affiliate_url": "https://meli.la/2HB2RFA",
-    "image_url": "https://http2.mlstatic.com/D_NQ_NP_756719-MLA92558518158_092025-O.webp"
+    "image_url": "https://http2.mlstatic.com/D_NQ_NP_756719-MLA92558518158_092025-O.webp",
+    "published_at": "2026-11-21T14:15:28.565646"
+  },
+  {
+    "id": 5,
+    "store": "Mercado Livre",
+    "title": "Console PlayStation5 Slim Disk - Pacote ASTRO BOT e Gran Turismo 7",
+    "original_price": "R$ 5.099",
+    "current_price": "R$ 4.844",
+    "coupon": "",
+    "affiliate_url": "https://meli.la/2HB2RFA",
+    "image_url": "https://http2.mlstatic.com/D_NQ_NP_756719-MLA92558518158_092025-O.webp",
+    "published_at": "2026-11-21T14:13:05.958024"
+  },
+  {
+    "id": 1,
+    "store": "Amazon",
+    "title": "Amazon.com.br",
+    "original_price": "",
+    "current_price": "",
+    "coupon": "",
+    "affiliate_url": "https://www.amazon.com.br/Trono-vidro-Rainha-Sombras-especial/dp/6559813576?pd_rd_w=ABJLh&content-id=amzn1.sym.10e1a731-ef21-44ba-ab30-59693479f947&pf_rd_p=10e1a731-ef21-44ba-ab30-59693479f947&pf_rd_r=1JBHTKT6WJFQ841Y8J23&pd_rd_wg=yziVm&pd_rd_r=ddf0b562-11ea-4be8-b97e-87bb638dce3a&pd_rd_i=6559813576&ref_=mtech_bf_wd_p13n_6559813576&th=1",
+    "image_url": "",
+    "published_at": "2026-11-21T13:29:35.871603"
   }
 ]
