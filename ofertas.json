@@ -1,5 +1,16 @@
 [
   {
+    "id": 20,
+    "store": "Shopee",
+    "title": "Achadinho especial na Shopee",
+    "original_price": "",
+    "current_price": "",
+    "coupon": "",
+    "affiliate_url": "https://s.shopee.com.br/8KrPrtme2z",
+    "image_url": "",
+    "published_at": "2026-11-27T14:14:13.361054"
+  },
+  {
     "id": 19,
     "store": "Mercado Livre",
     "title": "Robô Aspirador Passa Pano Redroad R11 Inteligente Automático Com Mapeamento Wi-Fi Estação Autolimpante 3 Em 1",
